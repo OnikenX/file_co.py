@@ -1,4 +1,4 @@
-# file_copy
+# file_co.py
 A simple python script that copies files licensed under MIT.
 
 It is used to copy contents of a folder to another folder using 
@@ -6,8 +6,8 @@ optionaly and expression to especify the files
 
 ## Help Message:
 ```
-❯ py file_copy.py -h
-usage: file_copy.py [-h] [-e EXPRESSION] [-c] [-d] [-i] loc_a loc_b
+❯ py file_co.py -h
+usage: file_co.py [-h] [-e EXPRESSION] [-c] [-d] [-i] loc_a loc_b
 
 Verifyfiles verifies the files in 2 folders the files can have a pattern to be identified this program can also copy and
 delete after the copy has done.
@@ -28,19 +28,19 @@ optional arguments:
 ## TLDR
 
 Prints the difference in files in both folders:
-`py file_copy.py ./a/ ./b/`
+`py file_co.py ./a/ ./b/`
 
 Copies files from a to b:
-`py file_copy.py ./a/ ./b/ -c`
+`py file_co.py ./a/ ./b/ -c`
 
 Copies files from a to b that contain in the title .txt:
-`py file_copy.py ./a/ ./b/ -ce .txt`
+`py file_co.py ./a/ ./b/ -ce .txt`
 
 Copies files from a to b that contain in the title .txt and then deletes the files that have been copied with the correct sizes:
-`py file_copy.py ./a/ ./b/ -cde .txt`
+`py file_co.py ./a/ ./b/ -cde .txt`
 
 Deletes the files in a that also exist in b with the same size and title, the i ignores the deletition warning:
-`py file_copy.py ./a/ ./b/ -di`
+`py file_co.py ./a/ ./b/ -di`
 
 
 
